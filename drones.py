@@ -24,6 +24,7 @@ if st.button("Submit"):
     st.image(bytes_data)
     img_new = cv2.imread(bytes_data,0)
     item = cv2.resize(img_new, (100,100))
+    st.write(item)
     nsamples,nx,ny = item.shape
     tester = item.reshape((nsamples,nx*ny))
     model = pickle.load(open("model.sav", "rb"))
