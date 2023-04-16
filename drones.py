@@ -28,4 +28,4 @@ if st.button("Submit"):
     tester = item.reshape((1,nx*ny))
     model = pickle.load(open("model.sav", "rb"))
     prediction = model.predict(tester)
-    st.write(prediction)
+    st.write(prediction.shape)
