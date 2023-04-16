@@ -28,4 +28,5 @@ if st.button("Submit"):
     tester = item.reshape((1,nx*ny))
     model = pickle.load(open("model.sav", "rb"))
     prediction = model.predict(tester)
-    st.write(prediction[0])
+    dict1 = {0:'Bird',1:'Drone'}
+    st.write(dict1[prediction[0]])
