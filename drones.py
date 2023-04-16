@@ -18,9 +18,11 @@ st.title("Predict whether it is a bird or drone")
 
 file = st.file_uploader("Upload the image here:", type=["jpg"])
 if st.button("Submit"):
-    st.image(file)
-    st.write(file)
-    item = cv2.resize(file, (100,100))
+    with open(file.name, "wb") as image:
+         image.write(file.getbuffer())
+    bytes_data = file.name
+    st.image(bytes_data)
+    item = cv2.resize(bytes_data, (100,100))
     nsamples,nx,ny = item.shape
     tester = item.reshape((nsamples,nx*ny))
     model = pickle.load(open("model.sav", "rb"))
