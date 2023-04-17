@@ -16,7 +16,7 @@ st.markdown(f"""<style>
 
 st.title("Predict whether it is a bird or drone")
 
-file = st.file_uploader("Upload the image here:", type=["jpg"])
+file = st.file_uploader("Upload the image here:", type=["jpg", "jpeg","png"])
 if st.button("Submit"):
     with open(file.name, "wb") as image:
          image.write(file.getbuffer())
