@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 from PIL import Image
 import cv2
-
+st.set_page_config(layout="wide")
 st.markdown(f"""<style>
          .stApp {{
              background-image: url("https://github.com/Divyam-kr/Files-for-streamlit-design-elements/blob/main/Drone.gif?raw=true");
