@@ -2,17 +2,18 @@ import pickle
 import streamlit as st
 from PIL import Image
 import cv2
-st.set_page_config(layout="wide")
-st.markdown(f"""<style>
+st.markdown(
+         f"""
+         <style>
          .stApp {{
-             background-image: url("https://github.com/Divyam-kr/Files-for-streamlit-design-elements/blob/main/Drone.gif?raw=true");
+             background-image: url("https://github.com/aadarsh1810/Color_Detection_YOLO3/blob/main/black-background.gif?raw=true");
              background-attachment: fixed;
              background-size: cover
          }}
          </style>
          """,
          unsafe_allow_html=True
-)
+     )
 
 st.title("Predict whether it is a bird or drone: ")
 
