@@ -14,7 +14,7 @@ st.markdown(f"""<style>
          unsafe_allow_html=True
 )
 
-st.title("Predict whether it is a bird or drone")
+st.title("Predict whether it is a bird or drone lol")
 
 file = st.file_uploader("Upload the image here:", type=["jpg", "jpeg","png"])
 if st.button("Submit"):
