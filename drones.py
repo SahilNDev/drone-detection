@@ -5,7 +5,7 @@ import cv2
 
 st.markdown(f"""<style>
          .stApp {{
-             background-image: url();
+             background-image: url("https://github.com/Divyam-kr/Files-for-streamlit-design-elements/blob/main/Drone.gif?raw=true");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -14,7 +14,7 @@ st.markdown(f"""<style>
          unsafe_allow_html=True
 )
 
-st.title("Predict whether it is a bird or drone lol000")
+st.title("Predict whether it is a bird or drone ")
 
 file = st.file_uploader("Upload the image here:", type=["jpg", "jpeg","png"])
 if st.button("Submit"):
