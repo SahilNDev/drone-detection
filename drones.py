@@ -37,8 +37,7 @@ with tab1:
 with tab2:
     st.header("About Us")
     st.markdown("The Creators of the Website:")
-    st.write("1. Divyam Kumar")
-    st.write("2. Harsh Gandhi")
-    st.write("3. Dhrubo Bhattacharjee")
-    st.write("4. Jainil Patel")
+    st.write("1. Bhavya Dashottar")
+    st.write("2. Divyam Kumar")
+    
          
