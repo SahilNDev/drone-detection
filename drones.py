@@ -6,7 +6,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://github.com/Divyam-kr/Files-for-streamlit-design-elements/blob/main/dr_AdobeExpress.gif?raw=true");
+             background-image: url("https://github.com/Divyam-kr/Files-for-streamlit-design-elements/blob/main/ezgif.com-video-to-gif.gif?raw=true");
              background-attachment: fixed;
              background-size: cover
          }}
