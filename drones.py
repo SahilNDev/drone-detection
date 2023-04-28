@@ -17,8 +17,7 @@ st.markdown(
 st.title("Predict whether it is a bird or drone: ")
 tab1 , tab2 = st.tabs(['Model Alpha', 'About Us'])
 with tab1:
-         st.title("Model")
-
+         st.header("Model")
          file = st.file_uploader("Upload the image here:", type=["jpg", "jpeg","png"])
          if st.button("Submit"):
            with open(file.name, "wb") as image:
