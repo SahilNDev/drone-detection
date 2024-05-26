@@ -14,6 +14,18 @@ st.markdown(
          """,
          unsafe_allow_html=True
      )
+
+custom_style = """
+<style>
+    .custom-text {
+        background-color: #FFD700;  /* Set your desired background color (e.g., gold) */
+        color: black;  /* Set text color */
+        padding: 5px;  /* Add some padding for readability */
+    }
+</style>
+"""
+# Display the custom style
+st.markdown(custom_style, unsafe_allow_html=True)
 st.title("Predict whether it is a bird or drone: ")
 tab1 , tab2 = st.tabs(['Model', 'About Us'])
 with tab1:
@@ -31,7 +43,7 @@ with tab1:
              model = pickle.load(open("model.sav", "rb"))
              prediction = model.predict(tester)
              dict1 = {0:'Bird',1:'Drone'}
-             st.write(dict1[prediction[0]])
+             st.write(f'<div class="custom-text">{dict1[prediction[0]]}</div>', unsafe_allow_html=True)
          
 with tab2:
     st.header("About Us")
