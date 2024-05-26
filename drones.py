@@ -18,7 +18,7 @@ st.markdown(
 custom_style = """
 <style>
     .custom-text {
-        background-color: #FFD700;  /* Set your desired background color (e.g., gold) */
+        background-color: "red";  /* Set your desired background color (e.g., gold) */
         color: black;  /* Set text color */
         padding: 5px;  /* Add some padding for readability */
     }
