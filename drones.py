@@ -21,7 +21,7 @@ custom_style = """
     background-color: black;  /* Set background color to black */
     color: white;  /* Set text color to white */
     padding: 10px;  /* Add some padding for readability */
-    font-size: 20px;  /* Increase font size */
+    font-size: 50px;  /* Increase font size */
     font-weight: bold;  /* Make the text bold */
     font-family: 'Arial', sans-serif;  /* Set font family */
     border-radius: 5px;  /* Optional: rounded corners */
