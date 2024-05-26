@@ -17,11 +17,15 @@ st.markdown(
 
 custom_style = """
 <style>
-    .custom-text {
-        background-color: "red";  /* Set your desired background color (e.g., gold) */
-        color: black;  /* Set text color */
-        padding: 5px;  /* Add some padding for readability */
-    }
+   .custom-text {
+    background-color: black;  /* Set background color to black */
+    color: white;  /* Set text color to white */
+    padding: 10px;  /* Add some padding for readability */
+    font-size: 20px;  /* Increase font size */
+    font-weight: bold;  /* Make the text bold */
+    font-family: 'Arial', sans-serif;  /* Set font family */
+    border-radius: 5px;  /* Optional: rounded corners */
+}
 </style>
 """
 # Display the custom style
